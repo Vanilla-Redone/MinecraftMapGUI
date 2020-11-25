@@ -7,13 +7,32 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "cwd": "${workspaceFolder}",
+            "name": "Debug",
+            "cwd": "${workspaceFolder}/app",
             "runtimeExecutable": "npm",
             "runtimeArgs": ["run-script", "start"],
             "trace": true,
-            "outputCapture": "std",
-            "console": "integratedTerminal"
+            "outputCapture": "std"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Package",
+            "cwd": "${workspaceFolder}/build",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run-script", "package"],
+            "trace": true,
+            "outputCapture": "std"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Clean",
+            "cwd": "${workspaceFolder}/build",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run-script", "clean"],
+            "trace": true,
+            "outputCapture": "std"
         }
     ]
 }

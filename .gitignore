@@ -1,6 +1,6 @@
 #Built applications
-/MinecraftMapGUI-*
-
+/build/out/app
+launch.json
 # Logs
 logs
 *.log
