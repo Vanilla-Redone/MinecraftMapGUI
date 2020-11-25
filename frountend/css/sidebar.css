@@ -82,7 +82,7 @@
 .sidebarlink h6 {
     position: absolute;
     top: -14px;
-    left: 64px;
+    left: 32px;
     color: white;
     font-size: 10px;
     text-transform: uppercase;
@@ -90,7 +90,7 @@
 .sidebarlink h5 {
     position: absolute;
     top: 3px;
-    left: 64px;
+    left: 32px;
     color: white;
     font-size: 12px;
     text-transform: uppercase;
