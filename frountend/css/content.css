@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Minecrafter';
+    src: url('../resources/fonts/MinecrafterAlt.woff2') format('woff2'),
+        url('../resources/fonts/MinecrafterAlt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+main section {
+    background: #1E1E1E;
+    position: absolute;
+    top: 75px;
+    width: 98%;
+    left: 1%;
+    height: calc(100vh - 175px);
+    overflow-y: scroll;
+}
+
+main::before {
+    content: "";
+    position: relative;
+    display: block;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: url("../resources/images/background.png");
+    background-size: cover;
+    filter: blur(5px);
+    transform: scale(1.1);
+    overflow:hidden;
+}
+
+main section h1,h2,h3,h4,h5,h6,p,a,li, .content {
+    color: white;
+}
+
+main section h1,h2,h3,h4,h5,h6 {
+    color: white;
+    margin-left: 25px;
+}
+
+main section p {
+    margin-left: 50px;
+    font-size: 12px;
+}
+
+.content {
+    font-size: 12px;
+}
+
+main::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 10px; left: calc(50% - 250px);
+    width: 500px;
+    height: 50px;
+    background: url("../resources/images/logo_large.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(1.5);
+}
+
+main h1 {
+    position: absolute;
+    top: -32px;
+    width: 100%;
+    left: 0px;
+    text-align: center;
+    font-family: 'Minecrafter';
+    color: #C2B7B4;
+    font-size: 50px;
+    transform: rotateX(45deg);
+    
+    text-shadow: 0 1px 0 #444, 0 2px 0 #444, 
+    0 3px 0 #444, 0 4px 0 #444, 
+    0 5px 0 #444, 0 6px 0 #444, 
+    0 7px 0 #444, 0 8px 0 #444, 
+    0 9px 0 #444, 0 10px 0 #444, 
+    0 11px 0 #444, 0 12px 0 #444, 
+    0 20px 30px rgba(0, 0, 0, 0.5); 
+}
+
+main h2 {
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    left: 0px;
+    text-align: center;
+    font-family: 'Minecrafter';
+    color: #068a23;
+    font-size: 35px;
+    transform: rotateX(45deg);
+    
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #444, 
+    0 3px 0 #444, 0 4px 0 #444, 
+    0 5px 0 #444, 0 6px 0 #444, 
+    0 7px 0 #444, 0 8px 0 #444, 
+    0 9px 0 #444, 0 10px 0 #444, 
+    0 11px 0 #444, 0 12px 0 #444, 
+    0 20px 30px rgba(0, 0, 0, 0.5); 
+}
