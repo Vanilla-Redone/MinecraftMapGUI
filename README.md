@@ -1,6 +1,6 @@
-![logo](frountend/resources/images/logo_large.png)
+![logo](app/frountend/resources/images/logo_large.png)
 # Minecraft Map Gui
-## A simple to use application to manage servers for playing custom maps.
+A simple to use application to manage servers for playing custom maps.
 
 # Installing
 [todo]
@@ -8,8 +8,10 @@
 # Building
 - Download source code of the project.
   - Can be opened in any text editor or IDE thats supports node.js
-- Compile the application using [electron-packager](https://github.com/electron/electron-packager)\
-`electron-packager . MinecraftMapGUI --platform=<platform>`
+- The application can either be compiled using [electron-packager](https://github.com/electron/electron-packager), or through the built in build system. \
+`node .\build\build.js`
+- Please note that the built-in build system only supports building on windows, for windows.
+- The output files can be found in `.\build\out\`
 
 # Issues and Feature Requests
 If any issues are found or you would like to request a feature, feel free to [create an issue](https://github.com/Kappabyte/MinecraftMapGUI/issues/new/choose) on the github page. \
