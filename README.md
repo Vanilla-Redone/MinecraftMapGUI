@@ -8,9 +8,9 @@ A simple to use application to manage servers for playing custom maps.
 # Building
 - Download source code of the project.
   - Can be opened in any text editor or IDE thats supports node.js
-- The application can either be compiled usingusing [electron-packager](https://github.com/electron/electron-packager), or through the build in build sytsem. \
+- The application can either be compiled using [electron-packager](https://github.com/electron/electron-packager), or through the built in build system. \
 `node .\build\build.js`
-- Please not that the built in build system only supports building on windows, for windows.
+- Please note that the built-in build system only supports building on windows, for windows.
 - The output files can be found in `.\build\out\`
 
 # Issues and Feature Requests
