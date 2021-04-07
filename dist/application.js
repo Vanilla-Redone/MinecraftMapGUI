@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/frontend/electron/WindowManager.ts":
+/*!************************************************!*\
+  !*** ./src/frontend/electron/WindowManager.ts ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ WindowManager)\n/* harmony export */ });\n/* harmony import */ var electron__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! electron */ \"electron\");\n/* harmony import */ var electron__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(electron__WEBPACK_IMPORTED_MODULE_0__);\n\r\nclass WindowManager {\r\n    constructor() {\r\n        electron__WEBPACK_IMPORTED_MODULE_0__.app.on(\"ready\", this.createWindow);\r\n    }\r\n    createWindow() {\r\n        // Create the browser window.\r\n        let win = new electron__WEBPACK_IMPORTED_MODULE_0__.BrowserWindow({\r\n            width: 800,\r\n            height: 600,\r\n            webPreferences: {\r\n                nodeIntegration: true\r\n            }\r\n        });\r\n        // and load the index.html of the app.\r\n        win.loadFile('index.html');\r\n    }\r\n}\r\n\n\n//# sourceURL=webpack://minecraftmapgui/./src/frontend/electron/WindowManager.ts?");
+
+/***/ }),
+
 /***/ "./src/index.ts":
 /*!**********************!*\
   !*** ./src/index.ts ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var electron__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! electron */ \"electron\");\n/* harmony import */ var electron__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(electron__WEBPACK_IMPORTED_MODULE_0__);\n\r\nfunction createWindow() {\r\n    // Create the browser window.\r\n    let win = new electron__WEBPACK_IMPORTED_MODULE_0__.BrowserWindow({\r\n        width: 800,\r\n        height: 600,\r\n        webPreferences: {\r\n            nodeIntegration: true\r\n        }\r\n    });\r\n    // and load the index.html of the app.\r\n    win.loadFile('index.html');\r\n}\r\nelectron__WEBPACK_IMPORTED_MODULE_0__.app.on('ready', createWindow);\r\n\n\n//# sourceURL=webpack://minecraftmapgui/./src/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _frontend_electron_WindowManager__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./frontend/electron/WindowManager */ \"./src/frontend/electron/WindowManager.ts\");\n\r\nnew _frontend_electron_WindowManager__WEBPACK_IMPORTED_MODULE_0__.default();\r\n\n\n//# sourceURL=webpack://minecraftmapgui/./src/index.ts?");
 
 /***/ }),
 

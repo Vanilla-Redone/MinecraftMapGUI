@@ -13,13 +13,16 @@ module.exports = [{
                 }]
             }]
         },
+        resolve: {
+            extensions: ['.ts', '.js', '.json']
+        },
         output: {
             filename: './application.js'
         }
     },
     {
         mode: 'development',
-        entry: './src/frontend/react.tsx',
+        entry: './src/frontend/interface/react.tsx',
         target: 'electron-renderer',
         devtool: 'source-map',
         module: {
@@ -31,13 +34,16 @@ module.exports = [{
                 }]
             }]
         },
+        resolve: {
+            extensions: ['.ts', '.tsx', '.js', '.json']
+        },
         output: {
             path: __dirname + '/dist',
             filename: 'react.js'
         },
         plugins: [
             new HtmlWebpackPlugin({
-                template: './src/frontend/index.html'
+                template: './src/frontend/target.html'
             })
         ]
     }
