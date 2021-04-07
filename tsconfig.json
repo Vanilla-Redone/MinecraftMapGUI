@@ -3,7 +3,9 @@
         "target": "ESNext",
         "sourceMap": true,
         "sourceRoot": "src",
-        "outDir": "dist"
+        "outDir": "dist",
+        "jsx": "react",
+        "moduleResolution": "node"
     },
     "include": [
         "src"
