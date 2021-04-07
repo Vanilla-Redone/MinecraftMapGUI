@@ -1,7 +1,11 @@
 {
     "compilerOptions": {
         "target": "ESNext",
+        "sourceMap": true,
         "sourceRoot": "src",
-        "outDir": "build"
-    }
+        "outDir": "dist"
+    },
+    "include": [
+        "src"
+    ]
 }
