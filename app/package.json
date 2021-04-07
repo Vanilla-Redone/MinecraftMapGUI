@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Kappabyte/MinecraftMapGUI/issues"
   },
-  "homepage": "https://github.com/Kappabyte/MinecraftMapGUI#readme"
+  "homepage": "https://github.com/Kappabyte/MinecraftMapGUI#readme",
+  "dependencies": {
+    "electron": "^12.0.2"
+  }
 }
