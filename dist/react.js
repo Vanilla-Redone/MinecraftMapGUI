@@ -29864,7 +29864,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Index = () => {
-    return react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Hello React!");
+    let [counter, setCounter] = react__WEBPACK_IMPORTED_MODULE_0__.useState(0);
+    const updateCounter = () => {
+        setCounter(counter + 1);
+    };
+    return react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null,
+            "$",
+            counter),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { onClick: updateCounter }));
+};
+const test = () => {
+    return react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "hello, world!");
 };
 react_dom__WEBPACK_IMPORTED_MODULE_1__.render(react__WEBPACK_IMPORTED_MODULE_0__.createElement(Index, null), document.getElementById('app'));
 
